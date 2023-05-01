@@ -1,0 +1,204 @@
+/* 
+common
+*****************/
+
+
+.tweet-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #1da1f2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tweet-button:hover {
+    background-color: #0c84c6;
+  }
+  
+
+.content .twitter1  img.homepost{
+    width: 50px;
+}
+
+.content img.homepost2{
+    width: 50px;
+}
+.twitter1 img.homepost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+html.body {
+    height: 100%;
+
+}
+
+.content {
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+/*
+post************/
+
+.post_form {
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.post_form form{
+    margin: 0 auto;
+    
+}
+.twitter1 {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    padding: 10px 0;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-right: 218px;
+}
+
+
+
+.line {
+    margin: 2%;
+    margin-inline-start: 1%;
+    margin-inline-end: 0%;
+}
+
+.post_form input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color:#e6fef7;
+}
+.post_form input[type="file"] {
+    width: 70%;
+    margin-bottom: 0;
+}
+.post_form button {
+    background-color: rgb(29, 161, 242);
+    color: #fff;
+    font-weight: bolder;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 0.25rem;
+}
+
+div.form{
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+div.form-input{
+    width: 100%;
+}
+div.tweet{
+    display: flex;
+    gap: 5%;
+}
+
+.post_form textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.post ul {
+    padding: 0;
+}
+
+.posts li {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 17px;
+    position: relative;
+
+}
+
+.posts li .menu_icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    
+}
+
+.posts li .menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+
+.posts li .menu a {
+    text-decoration: none;
+}
+
+.posts li .logo {
+    flex-basis: 15%;
+    margin-left: -45px;
+}
+
+.posts li .logo img {
+    width: 60%;
+}
+
+.posts li .name_body {
+    flex-basis: 85%;
+}
+
+
+.posts li .name_body .name {
+    font-weight: bold;
+}
+
+.posts li .name_body .datetime {
+    color: gray;
+}
+
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+}
+
+/* like */
+
+.likes img{
+    width: 40px;
+}
+.likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.menu {
+    padding: 1rem 1rem;
+    color: #212529;
+}
