@@ -54,7 +54,7 @@ def edit(request, post_id):
             form.save()
             return HttpResponseRedirect('/')
         else:
-            return HttpResponseRedirect(form.errors.as_jason())
+            return HttpResponseRedirect(form.errors.as_json())
 
     return render(request, 'edit.html', {'post': post})
 
