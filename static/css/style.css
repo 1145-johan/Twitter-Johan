@@ -24,6 +24,12 @@ common
     width: 50px;
 }
 
+/* Edit Page */
+
+.content .logodiv  img.homepost{
+    width: 50px;
+}
+
 .content img.homepost2{
     width: 50px;
 }
@@ -31,6 +37,26 @@ common
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Edit Page */
+
+.logodiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.post_form img.post-image {
+    width: 50%;
+    margin: 15px 64px;
+}
+
+.butns {
+    margin: 0 5px;
 }
 
 
@@ -121,7 +147,7 @@ div.tweet{
     border: 1px solid #ccc;
 }
 
-.post ul {
+.posts ul {
     padding: 0;
 }
 
@@ -160,7 +186,6 @@ div.tweet{
 
 .posts li .logo {
     flex-basis: 15%;
-    margin-left: -45px;
 }
 
 .posts li .logo img {

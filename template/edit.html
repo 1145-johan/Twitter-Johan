@@ -2,24 +2,32 @@
 
 <section class="content">
     <div class="logodiv">
-        <img src="{% static 'img/twitter.jpg' %}" alt="" class="twitterlog">
+        <img src="{% static 'img/twitter.png' %}" alt="" class="homepost">
         <h1>Edit</h1>
     </div>
     <section class="post_form">
         <form action="/edit/{{post.id}}/" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
+            <div class="form">
+                <div class="editlogo">
+            <img class="homepost2" src="{% static 'img/question.png' %}" />
+        </div>
+        <div class="form-input">
             <input type="text" name="name" value="{{ post.name }}" required />
             <input type="text" name="body" value="{{ post.body }}">
             <input type="file" name="image">
+        </div>
+    </div>
            {% if post.image.url %}
-           <img src="{{ post.image.url }}" class="post-image" alt="" width="100%">
+           <img src="{{ post.image.url }}" class="post-image" alt="" >
            {% endif %}
           
             <div class="butns">
                 <a href="{% url 'index' %}"><button>Cancel</button></a>
-                <input type="submit" name="" id="" value="Update" />
+                <button type="submit" name="" id="" value="Update">Update</button>
 
             </div>
+        
             
         </form>
     </section>
